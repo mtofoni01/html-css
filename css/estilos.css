@@ -277,5 +277,132 @@ a.btn-fill:active {
     width: 2.5rem;
 }
 
-/* Clase 6 */
+/* Clase 6 / 7 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 
+    width: min(24rem, 100%);
+    margin: 0 auto;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+form span {
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(286, 100%, 35%);
+
+    visibility: hidden;
+}
+
+form input,
+form button,
+form select,
+form textarea {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+}
+
+form button {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+}
+
+form button:hover {
+    background-color: hsl(286, 100%, 65%);
+    border: 0.1rem solid hsl(286, 100%, 65%);
+    color: hsl(208, 100%, 8%);
+    cursor: pointer;
+}
+
+form input:focus,
+form button:focus,
+form select:focus,
+form textarea {
+    /* outline: 0.3rem solid red;
+    outline-offset: 0.5rem; */
+
+    outline: none;
+    border: 0.1rem solid hsl(286, 100%, 65%);
+}
+
+/* Clase 8 */
+/* .btn-icon-home,
+.btn-icon-notif,
+.btn-icon-fav {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+} */
+
+.btn-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.btn-icon-home {
+    background-image: url('../img/home-outline.svg');
+}
+
+.btn-icon-home:hover {
+    background-image: url('../img/home-fill.svg');
+}
+
+.btn-icon-notif {
+    background-image: url('../img/notifications-outline.svg');
+}
+
+.btn-icon-notif:hover {
+    background-image: url('../img/notifications-fill.svg');
+}
+
+.btn-icon-fav {
+    background-image: url('../img/favorite-outline.svg');
+}
+
+.btn-icon-fav:hover {
+    background-image: url('../img/favorite-fill.svg');
+}
+
+/* Los lectores de pantalla no leen CSS. */
+.sr-only {
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Buscador */
+.buscador {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+}
+
+.buscador button {
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+    background-image: url('../img/search-outline-dark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buscador button:hover {
+    background-image: url('../img/search-outline-light.svg');
+}
